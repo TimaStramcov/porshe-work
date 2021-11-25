@@ -1,0 +1,41 @@
+.layout{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.layout__agon{
+    position: relative;
+    z-index: 1;
+    background-image: url('../../img/agon-bg.png');
+}
+
+.layout__agon-pro{
+    position: relative;
+    z-index: 1;
+    background-image: url('../../img/agon-pro-bg.png');
+}
+
+.layout__aoc{
+    position: relative;
+    z-index: 1;
+    background-image: url('../../img/aoc-gaming-bg.png');
+}
+
+.lighter{
+    background-size: 181.3125rem 181.3125rem;
+    background-repeat: no-repeat;
+    background-position: top -90.625rem left -90.625rem,top 148.125rem right -90.625rem,top 386.875rem left -90.625rem;
+}
+
+.lighter__agon{
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(255,133,0,.25) 0,rgba(209,5,12,.25) 46.35%,rgba(100,6,66,0) 100%),radial-gradient(50% 50% at 50% 50%,rgba(255,133,0,.25) 0,rgba(209,5,12,.25) 46.35%,rgba(100,6,66,0) 100%),radial-gradient(50% 50% at 50% 50%,rgba(255,133,0,.25) 0,rgba(209,5,12,.25) 46.35%,rgba(100,6,66,0) 100%);
+}
+
+.lighter__agon-pro{
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(82,63,224,.4) 0,rgba(39,8,74,.24) 64.58%,rgba(3,1,16,0) 100%),radial-gradient(50% 50% at 50% 50%,rgba(82,63,224,.4) 0,rgba(39,8,74,.24) 64.58%,rgba(3,1,16,0) 100%),radial-gradient(50% 50% at 50% 50%,rgba(82,63,224,.4) 0,rgba(39,8,74,.24) 64.58%,rgba(3,1,16,0) 100%);
+}
+
+.lighter__aoc{
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(255,133,0,.2) 0,rgba(255,132,1,.1) 46.35%,rgba(100,6,66,0) 100%),radial-gradient(50% 50% at 50% 50%,rgba(255,133,0,.2) 0,rgba(255,132,1,.1) 46.35%,rgba(100,6,66,0) 100%),radial-gradient(50% 50% at 50% 50%,rgba(255,133,0,.2) 0,rgba(255,132,1,.1) 46.35%,rgba(100,6,66,0) 100%);
+}

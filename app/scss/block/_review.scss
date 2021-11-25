@@ -1,0 +1,104 @@
+.summary{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+
+    h4{
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.39;
+        letter-spacing: 0.1em;
+        margin-bottom: 1.25rem;
+        color: #ff8502;
+        padding-left: 0;
+        &::before{
+            display: none;
+        }
+    }
+
+    .username{
+        line-height: 1.5;
+        font-size: 1rem;
+        letter-spacing: .07rem;
+        font-weight: 500;
+    }
+
+    .date{
+        line-height: 1;
+        font-size: 0.8rem;
+        color: gainsboro;
+    }
+
+    .reviews__user-info{
+        display: flex;
+        align-items: center;
+        margin-bottom: .6rem;
+    }
+
+    .user-avatar{
+        border-radius: 100%;
+        background-color: gainsboro;
+        width: 1.875rem;
+        height: 1.875rem;
+        margin-right: 0.625rem;
+        background-image: url('../../avatar.jpg');
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.review{
+    p{
+        font-size: .9rem;
+        line-height: 1;
+    }
+}
+
+.actions{
+    .review-reply{
+        color: #ff8502;
+        text-decoration: none;
+        font-size: 1rem;
+        &:hover{
+            opacity: .9;
+        }
+    }
+}
+
+.preview__img{
+    display: flex;
+    align-items: center;
+    
+    .img__list{
+        display: flex;
+        align-items: center;
+    }
+
+    .img__list-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.375rem;
+        height: 5.625rem;
+        background-color: gainsboro;
+        margin: 0.625rem 0.625rem 0.625rem 0;
+        overflow: hidden;
+        &:hover{
+            cursor: pointer;
+        }
+
+        img{
+            width: inherit;
+        }
+    }
+}
+
+ul .reviews-answer{
+     padding-left: 4rem;
+    .summary{
+        h4{
+             margin: 0.5rem 0 0.5rem;
+        }
+    }
+}

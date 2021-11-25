@@ -1,0 +1,36 @@
+body{
+    background-color: $background;
+    @include text-style();
+    font-family: Montserrat, sans-serif;
+    @media (min-width: 1850px) {
+      font-size: 1.5rem;
+    }
+    @media (max-width:720px) {
+      font-size: .9rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    @media (min-width: 360px) and (max-width: 720px) {
+      margin: 0 1rem;
+    }
+    @media (min-width: 720px) and (max-width: 1050px) {
+      margin: 0 2rem;
+    }
+    @media (min-width: 1050px) {
+      width: 60rem;
+    }
+    @media (min-width: 1250px) {
+       width: 75rem;
+    }
+    @media (min-width: 1550px) {
+      width: 93.75rem;
+    }
+    @media (min-width: 1850px) {
+      width: 112.5rem;
+    }
+    @media (min-width: 2150px) {
+      width: 131.25rem;
+    }
+  }

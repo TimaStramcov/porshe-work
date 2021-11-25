@@ -1,0 +1,13 @@
+.review-field{
+    label{
+        display: block;
+        color: lightgray;
+        line-height: 1;
+    }
+    textarea{
+        padding: .5rem;
+    }
+    input{
+        background-color: rgb(36, 35, 35);
+    }
+}

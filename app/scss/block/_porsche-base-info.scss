@@ -1,0 +1,62 @@
+.porsche-page__base-info{
+
+    .base-infe__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .base-info__text{
+        width: 310px;
+        @media (max-width: 768px) {
+            order: 1;
+        }
+        h3{
+            letter-spacing: normal;
+            line-height: 1.3;
+            position: relative;
+            @media (max-width: 768px) {
+                padding-top: 30px;
+                text-align: center;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: white;
+                bottom: -20px;
+                left: 0;
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .base-info__img{
+        img{
+            max-width: 550px;
+            @media (max-width: 850px) {
+                max-width: 400px;
+            }
+            @media (max-width: 450px) {
+                max-width: 300px;
+            }
+        }
+    }
+
+    .base-info__text--oder{
+        order: 1;
+        h3{
+            text-align: right;
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+}

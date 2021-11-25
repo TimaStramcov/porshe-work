@@ -1,0 +1,28 @@
+.porsche-page__video{
+    margin: 200px auto 300px;
+    @media (max-width: 1024px) {
+        margin: 100px auto 150px;
+    }
+    @media (max-width: 768px) {
+        margin: 50px auto 75px;
+    }
+    @media (max-width: 450px) {
+        margin: 30px auto 45px;
+    }
+
+    .video-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+            height: 600px;
+            width: 100%;
+            @media (max-width: 768px) {
+                height: 400px;
+            }
+            @media (max-width: 450px) {
+                height: 300px;
+            }
+        }
+    }
+}

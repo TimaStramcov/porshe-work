@@ -1,0 +1,159 @@
+.porsche-specifications{
+    margin-top: 50px;
+    padding: 50px 0 120px;
+    .font-size-change{
+        font-size: 22px;
+    }
+}
+
+.specifications__table{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1260px;
+    font-size: 1rem;
+    @media (max-width: 550px) {
+        margin-top: 50px;
+    }
+    .porsche-specifications__options{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        padding: 20px 25px;
+        border: 1px solid $porsche-border-spec;
+        @media (max-width: 350px) {
+            padding: 0;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            filter: contrast(0);
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+        .porsche-specifications__options-name-list{
+            li{
+                padding-left: 20px;
+                width: 250px;
+                border-bottom: 1px solid $porsche-border-spec;
+            }
+        }
+    }
+    .porsche-specifications__spec-list{
+        margin-top: 30px;
+        width: 450px;
+        padding: 0 20px;
+        li{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .porsche-specifications__list{
+            li{
+                border-bottom: 1px solid $porsche-border-spec;
+                .porsche-specifications__list-item-name{
+                    color: $porsche-text-spec;
+                }
+            }
+        }
+    }
+    .porsche-specifications__size-img{
+        margin-top: 30px;
+        width: 360px;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .porsche__screen-size{
+            border-bottom: 1px solid $porsche-border-spec;
+            width: 260px;
+            display: flex;
+            justify-content: center;
+            color: $porsche-text-spec;
+            @media (max-width: 1450px) {
+                width: 200px;
+            }
+            span{
+                background-color: #131313;
+            }
+        }
+
+        .screen-size--width{
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            @media (max-width: 1450px) {
+                width: 200px;
+                bottom: 55px;
+            }
+        }
+
+        .screen-size--height{
+            position: absolute;
+            top: 40%;
+            left: 58%;
+            transform: rotate(90deg);
+            @media (max-width: 1450px) {
+                width: 200px;
+                left: 63%;
+                top: 50%;
+            }
+        }
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.porsche__button-show-all-specification{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    a{  
+        position: relative;
+        color: white;
+        font-family: Montserrat, sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 800;
+        text-align: center;
+        transition: all .5s ease-out;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50%;
+            height: 1px;
+            background-color: $porsche-red;
+            transition: all .5s ease-out;
+        }
+        &:hover{
+            color: $porsche-red;
+            span{
+                color: $porsche-red;
+            }
+            &::after{
+                width: 100%;
+            }
+        }
+        span{
+            display: inline-block;
+            color: $porsche-text-spec;
+            text-transform: lowercase;
+            padding-left: 3px;
+            font-weight: normal;
+            transition: all .5s ease-out;
+        }
+    }
+}

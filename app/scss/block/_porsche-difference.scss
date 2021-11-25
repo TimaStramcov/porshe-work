@@ -1,0 +1,105 @@
+.porsche-page__difference{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .porsche-title-bottom-line{
+        max-width: 560px;
+        margin-bottom: 40px;
+    }
+
+    .porsche__difference-text{
+        max-width: 730px;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+}
+
+.porsche-difference__slider{
+    position: relative;
+    margin-top: 90px;
+    .difference__slider-main-item{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .difference__slider-change-item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 50%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-right: 1px solid hsla(0,0%,100%,.25);
+        img{
+            height: 100%;
+        }
+    }
+    .circle{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: $porsche-red;
+        border-radius: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.gradient-dark-shadow{
+    background: linear-gradient(180deg,#131313 25%,#000);
+}
+
+.racer-bg{
+    position: relative;
+    z-index: 1;
+    .racer-bg{
+            position: absolute;
+            top: -75px;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+}
+
+.porsche-page__difference-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.position-change{
+    position: relative;
+    .difference-wrapper{
+        position: absolute;
+        top: 3%;
+        width: 97%;
+        .porsche-difference__slider{
+            margin: 0;
+            .difference__slider-change-item{
+                overflow: hidden;
+                img{
+                    object-fit: cover;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
